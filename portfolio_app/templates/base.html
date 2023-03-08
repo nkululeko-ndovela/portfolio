@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div>
+        <a href="{% url 'profile' %}">Profile</a>
+    </div>
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
